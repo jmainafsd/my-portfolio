@@ -37,7 +37,7 @@ const Main = () => {
             <div className="sxn sxnB" ref={sectionB}> <WhatIDo /> </div>
             <div className="sxn sxnC" ref={sectionC}> <Technologies /> </div>
             <div className="sxn sxnD" ref={sectionD}> <SampleProjects /> </div>
-            <div className="sxn sxnE" ref={sectionE}> <ContactMe /> </div>
+            <div className="sxn sxnE" style={{minHeight: '450px'}} ref={sectionE}> <ContactMe /> </div>
 
             <Footer />
 
