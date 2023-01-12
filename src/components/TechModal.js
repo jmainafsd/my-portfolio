@@ -6,9 +6,9 @@ export default function TechModal() {
     return (
         <React.Fragment>
             <div className="row tableRow pt-0">
-                <div className="col col-12 col-lg">
-                    <Card className="tableDiv">
-                        <CardHeader className="tableHeadDiv">
+                <div className="col-12 col-lg p-0">
+                    <Card className="tableDiv me-lg-3">
+                        <CardHeader className="tableHead">
                             Languages, Frameworks & Key Libraries
                         </CardHeader>
                         <CardBody>
@@ -87,9 +87,9 @@ export default function TechModal() {
                         </CardBody>
                     </Card>
                 </div>
-                <div className="col col-12 col-lg">
-                    <Card className="tableDiv">
-                        <CardHeader className="tableHeadDiv">
+                <div className="col-12 col-lg p-0 mt-5 mt-lg-0">
+                    <Card className="tableDiv ms-lg-3">
+                        <CardHeader className="tableHead">
                             General Tools & Toolkits
                         </CardHeader>
                         <CardBody>
@@ -145,18 +145,18 @@ export default function TechModal() {
                     </Card>
                 </div>
             </div>
-            <div className="row tableRow pt-2" style={{margin: '-15px'}}>
+            <div className="row tableRow pt-5">
                 <div className="col">
-                    <Card className="tableDiv" style={{border: 'none', background: 'aquamarine'}}>
-                        <CardHeader className="tableHeadDiv" style={{border: 'none', borderRadius: 10, background: '#63f8c7'}}>
-                            Other Libraries, Tools & Kits
+                    <Card className="tableDiv strip">
+                        <CardHeader className="tableHead stripHead" >
+                            Other Libraries
                         </CardHeader>
                         
                         <CardBody className="p-0 pt-2">
-                            <div className="row tableRow p-0" style={{paddingLeft: '-15px'}}>
-                                <div className="col col-12 col-lg-6 col-xl inner">
+                            <div className="row tableRow p-0" >
+                                <div className="col col-12 col-lg-6 col-xl inner pe-lg-3 pe-xl-4 mt-4 mt-lg-0">
                                     <Card className="tableDiv">
-                                        <CardHeader className="tableHeadDiv">
+                                        <CardHeader className="tableHead">
                                             React Libraries
                                         </CardHeader>
                                         <CardBody className="p-0">
@@ -173,6 +173,7 @@ export default function TechModal() {
                                                     <tr><th> React Popper </th></tr>
                                                     <tr><th> R. Transition Grp </th></tr>
                                                     <tr><th> React Scripts </th></tr>
+                                                    <tr><th> Formik </th></tr>
                                                     <tr><th> User Event </th></tr>
                                                     <tr><th> Jest Dom </th></tr>
                                                 </tbody>
@@ -180,9 +181,9 @@ export default function TechModal() {
                                         </CardBody>
                                     </Card>
                                 </div>
-                                <div className="col col-12 col-lg-6 col-xl inner">
+                                <div className="col col-12 col-lg-6 col-xl inner ps-lg-3 px-xl-2 mt-5 mt-lg-0">
                                     <Card className="tableDiv">
-                                        <CardHeader className="tableHeadDiv">
+                                        <CardHeader className="tableHead">
                                             React Native Libraries
                                         </CardHeader>
                                         <CardBody className="p-0">
@@ -210,11 +211,11 @@ export default function TechModal() {
                                         </CardBody>
                                     </Card>
                                 </div>
-                                <div className="col col-lg-12  col-xl inner">
+                                <div className="col col-lg-12  col-xl inner ms-xl-4 mt-5 mt-xl-0">
                                     <div className="row shortRow " style={{height: '100%', padding: 0}}>
                                         <div className="col p-0 pb-3">
                                             <Card className="tableDiv" style={{height: 'auto'}}>
-                                                <CardHeader className="tableHeadDiv">
+                                                <CardHeader className="tableHead">
                                                     Redux Libraries
                                                 </CardHeader>
                                                 <CardBody className="p-0">
@@ -233,9 +234,9 @@ export default function TechModal() {
                                                 </CardBody>
                                             </Card>
                                         </div>
-                                        <div className="col p-0 pt-3">
+                                        <div className="col p-0 pt-3 mt-3 mt-xl-0">
                                             <Card className="tableDiv" style={{height: '100%', justifyContent: 'flex-end'}}>
-                                                <CardHeader className="tableHeadDiv">
+                                                <CardHeader className="tableHead">
                                                     React Navigation Libraries
                                                 </CardHeader>
                                                 <CardBody className="p-0">
