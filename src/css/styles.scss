@@ -728,7 +728,7 @@ body {
     .sampleSpan {
         height: 140px;
         background-color: red;
-        background: linear-gradient(yellowgreen 5%, teal 95%);
+        background: linear-gradient( yellowgreen, teal);
     }
     .sampleNavbar {
         background-color: teal;
@@ -737,7 +737,7 @@ body {
     .sampleDiv {
         margin: 0 auto;
         padding: 45px 0;
-        background: linear-gradient(teal, yellow, teal);
+        background: linear-gradient(rgb(3, 233, 233), yellow, rgb(3, 233, 233),);
         // background-color: teal;
         .sampleRow {
             max-width: 1400px;
@@ -781,7 +781,7 @@ body {
     .downwardSkewRow {
         width: 100vw;
         // height: 90px;
-        background-color: teal;
+        background-color: rgb(3, 233, 233),;
         margin: 0 auto;
         padding-top: 60px;
         // background-image: linear-gradient(skyblue 60%, black 40%);
