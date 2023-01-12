@@ -1,46 +1,86 @@
-import React, { useState, useRef } from "react";
-import { Nav, Navbar, NavbarBrand, NavItem, NavLink, NavbarToggler, Collapse, Row, Col, Card, CardHeader, CardBody, CardText, CardImg,  Media } from 'reactstrap';
+import React, { useState, useEffect } from "react";
+import { Nav, Navbar, NavbarBrand, NavItem, NavLink, NavbarToggler, Collapse, Button, Row, Col, Card, CardHeader, CardBody, CardText, CardImg,  Media } from 'reactstrap';
+// import { VscEyeClosed, SlClose, AiOutlineCloseCircle } from 'react-icons/fa';
+import { GoEyeClosed } from 'react-icons/go';
 import '../scroller.css';
-import AnimatedBrand from "./AnimatedBrand";
 
 
 const Header = (props) => {
     const [isOpen, setIsOpen] = useState(false);
-    const { onScrollToRef, sectionA, sectionB, sectionC, sectionD, sectionE, sectionF, sectionG, sectionH } = props;
+    const [showNavbarToggler, setShowavbarToggler] = useState(false);
+    const { onScrollToRef, sectionA, sectionB, sectionC, sectionD, sectionE } = props;
 
-    // function lockScroll() {
-    //     document.body.classList.toggle('lock-scroll');
-    // }
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 760) {
+                setShowavbarToggler(true);
+            } else {
+                setShowavbarToggler(false);
+            }
+        });
+    }, []);
 
-    const handleClick = (ref) => {
+    function lockScroll() {
+        document.body.classList.toggle('lock-scroll');
+    }
+
+    function handleToggle() { 
+        setIsOpen(!isOpen)
+        lockScroll()
+    }
+
+    const handleLinkClick = (ref) => {
         onScrollToRef(ref);
         setIsOpen(!isOpen);
-        // lockScroll();
+        lockScroll();
     }
 
     return(
         <React.Fragment>
-            <Navbar fixed='top' expand='none' light className="navbar" style={{background: 'transparent'}}>
+            <Navbar fixed='top' expand='none' light className="navbar-main" 
+                // style={{background: 'transparent'}}
+            >
                 <NavbarBrand className="col-10 col-lg-9 p0m0">
                     <div >
                         <h1 className="col col-md-6"></h1>
                         {/* <span className="col-6 d-none d-md-inline-block"><AnimatedBrand /> </span> */}
                     </div>
                 </NavbarBrand>
-                <NavbarToggler 
-                    className='bg-warning m-0'
-                    onClick={() => { 
-                        setIsOpen(!isOpen)
-                        // lockScroll()
-                    }} 
-                />
+
+                {showNavbarToggler && (
+                    <NavbarToggler
+                        className='toggler'
+                        onClick={() => handleToggle()} 
+                    />
+                )}
+
                 <Collapse 
-                    isOpen={isOpen} navbar className="col-2 col-lg-3 bg-success p0m0"  
-                    style={{flexDirection: 'row', justifyContent: 'right', height: '90vh'}}
-                >
-                    <Nav className="navi" navbar >
+                    isOpen={isOpen} navbar className="col-2 col-lg-3 navbarCollapse" >
+                    <Nav className="navi" navbar>
+                        <GoEyeClosed
+                            className="eyeBtn-position eyeBtn-style"
+                            onClick={() => handleToggle() }
+                        />
                         <div className="row navRow">
-                            <div className='navCol col-12 col-sm-6 col-md-4 col-lg-3'>
+                            <div className='navCol col-12 col-sm-10 col-md-8 col-lg-7 col-xl-5'>
+                                <NavItem className="nav-item">
+                                    <NavLink className="nav-link" to="/projectB" onClick={() => handleLinkClick(sectionA)}>Who I am</NavLink>
+                                </NavItem>
+                                <NavItem className="nav-item">
+                                    <NavLink className="nav-link" to="/projectB" onClick={() => handleLinkClick(sectionB)}>What I Do</NavLink>
+                                </NavItem>
+                                <NavItem className="nav-item">
+                                    <NavLink className="nav-link" to="/projectB" onClick={() => handleLinkClick(sectionC)}>Technologies I Utilize</NavLink>
+                                </NavItem>
+                                <NavItem className="nav-item">
+                                    <NavLink className="nav-link" to="/projectB" onClick={() => handleLinkClick(sectionD)}>Sample Projects</NavLink>
+                                </NavItem>
+                                <NavItem className="nav-item">
+                                    <NavLink className="nav-link" to="/projectB" onClick={() => handleLinkClick(sectionE)}>Contact Me</NavLink>
+                                </NavItem>
+                            </div>
+                            
+                            {/* <div className='navCol col-12 col-sm-6 col-md-4 col-lg-3'>
                                 <Card 
                                     className='navCard'
                                     onClick={() => handleClick(sectionA)}
@@ -143,11 +183,6 @@ const Header = (props) => {
                                         <CardText> MyProjectH</CardText>
                                     </CardBody>
                                 </Card>
-                            </div>
-                            {/* <div className='col-12 col-sm-6 col-md-4 col-lg-3 bg-info'>
-                                <NavItem className="nav-item">
-                                    <NavLink className="nav-link" to="/projectB" onClick={() => handleClick(sectionB)}>Project B</NavLink>
-                                </NavItem>
                             </div> */}
                         </div>
                     </Nav>
