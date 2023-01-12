@@ -152,7 +152,7 @@ export default function SampleProjects() {
                                 This is a fully responsive e-commerce website. 
                             </p>
                             <p>
-                                Built using both <span className="text-warning">Vanilla JavaScript</span> and  <span className="text-warning">React JS</span>, and <span className="text-warning"> Bootstrap </span> for responsiveness.
+                                Built using both <span className="text-primary">Vanilla JavaScript</span>,  <span className="text-primary">React JS</span> and <span className="text-primary"> Bootstrap </span> for responsiveness.
                             </p>
                             <p>
                                 Tools and libraries used include:
