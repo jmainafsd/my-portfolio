@@ -1,12 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import { ScrollToTop, ScrollToRef } from './Scrolls';
 import { Container } from 'reactstrap';
 import Header from './Header';
 import Footer from './Footer';
-import ProjectEcomm from './ProjectEcomm';
-import ProjectPMS from './ProjectPMS';
-import ProjectMPesaTRS from './ProjectMPesaTRS';
-import ProjectRetailPOS from './ProjectRetailPOS';
 import Landing from './Landing';
 import SampleProjects from './SampleProjects';
 import WhatIDo from './WhatIDo';
@@ -24,10 +20,6 @@ const Main = () => {
     return (
         <Container fluid>
             
-            {/* <div className='circle bg-info'>
-                <h2 className="brand-position brand-style"> John Maina</h2>
-                <h2 className="sub-brand-position sub-brand-style"> Fullstack Developer</h2>
-            </div> */}
             {/* <HomeCarousel /> */}
 
             <Header
@@ -46,12 +38,6 @@ const Main = () => {
             <div className="sxn sxnC" ref={sectionC}> <Technologies /> </div>
             <div className="sxn sxnD" ref={sectionD}> <SampleProjects /> </div>
             <div className="sxn sxnE" ref={sectionE}> <ContactMe /> </div>
-            
-            {/* <div className="section" ref={sectionD}> <ProjectEcomm /> </div>
-            <div className="section" ref={sectionE}> <ProjectMPesaTRS /> </div>
-            <div className="section" ref={sectionF}> <ProjectPMS /> </div>
-            <div className="section" ref={sectionG}> <ProjectRetailPOS /> </div>
-            <div className="section" ref={sectionH}> <ProjectEcomm /> </div> */}
 
             <Footer />
 
