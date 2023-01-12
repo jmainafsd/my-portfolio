@@ -17,8 +17,8 @@ export default function ContactMeLinkedIn() {
                 <span className="d-none d-md-block p-md-4" />
                 <Card className="my-md-3 my-lg-5 py-5 px-3 bg-dark text-white">
                     <p style={{textAlign: 'center'}}>
-                        Please <a style={{fontSize: '20px', textDecoration:'none'}} href="http://www.linkedin.com/in/john-maina-2abab3227">Click Here</a> to contact me via 
-                        <a style={{fontSize: '28px', textDecoration:'none'}} href="http://www.linkedin.com/in/john-maina-2abab3227"> LinkedIn </a> 
+                        Please <a target="_blank" style={{fontSize: '20px', textDecoration:'none'}} href="http://www.linkedin.com/in/john-maina-2abab3227">Click Here</a> to contact me via 
+                        <a target="_blank" style={{fontSize: '28px', textDecoration:'none'}} href="http://www.linkedin.com/in/john-maina-2abab3227"> LinkedIn </a> 
                     </p>
                 </Card>
             </Col>
