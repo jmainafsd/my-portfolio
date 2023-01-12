@@ -31,7 +31,7 @@ export default function SampleProjects() {
                                 This is obviously the ditigal portfolio you are scrolling through right now. 
                             </p>
                             <p>
-                                This web application is built using <span className="text-warning">React </span> JavaScript Library, and it's fully responsive across Mobile and Web by employing <span className="text-warning">Reactstrap</span>.
+                                This web application is built using <span className="text-primary">React </span> JavaScript Library, and it's fully responsive across Mobile and Web by employing <span className="text-primary">Reactstrap</span>.
                             </p>
                             <p>
                                 Tools and libraries used include:
