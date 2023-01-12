@@ -6,7 +6,7 @@ const Footer = () => {
     return(
         <React.Fragment>
             
-            <Container fluid>
+            {/* <Container fluid>
                 <Row className="bg-success">
                     <Col xs="3">Column with .col-3 Size</Col>
                     <Col xs="auto">.Column with col-auto Size</Col>
@@ -25,7 +25,6 @@ const Footer = () => {
 
             <Container fluid>
                 <Row className="bg-danger">
-                {/* <Row className='bg-danger' style={{margin: 10}}> */}
                     <Col className='bg-primary'>
                         This is Container 1 in Footer
                     </Col>
@@ -36,15 +35,13 @@ const Footer = () => {
                         <p>This is Container 1 in Footer </p>
                     </Col>
                 </Row>
-            </Container>
+            </Container> */}
             
-            <Container fluid>
-                <div className='row'>
-                    <div className='col'>
-                        <p>This is the Footer of my portfolio</p>
-                    </div>
+            <div className='row py-4 bg-dark text-white' style={{justifyContent: 'center'}}>
+                <div className='col col-8'>
+                    <p style={{textAlign: 'center'}}>@ 2022 JOHN MAINA </p>
                 </div>
-            </Container>
+            </div>
         </React.Fragment>
     );
 }
