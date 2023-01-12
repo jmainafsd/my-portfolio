@@ -24,7 +24,7 @@ export const ScrollToTop = () => {
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 400) {
+            if (window.scrollY > (760 * 6)) {
                 setShowTopBtn(true);
             } else {
                 setShowTopBtn(false);
