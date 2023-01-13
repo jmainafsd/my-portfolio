@@ -40,19 +40,18 @@ const Header = (props) => {
             <Navbar fixed='top' expand='none' light className="navbar-main" 
                 // style={{background: 'transparent'}}
             >
-                <NavbarBrand className="col-10 col-lg-9 p0m0">
+                {/* <NavbarBrand className="col-10 col-lg-9 p0m0">
                     <div >
                         <h1 className="col col-md-6"></h1>
-                        {/* <span className="col-6 d-none d-md-inline-block"><AnimatedBrand /> </span> */}
                     </div>
-                </NavbarBrand>
-
+                </NavbarBrand> */}
+{/* 
                 {showNavbarToggler && (
                     <NavbarToggler
                         className='toggler'
                         onClick={() => handleToggle()} 
                     />
-                )}
+                )} */}
 
                 <Collapse 
                     isOpen={isOpen} navbar className="col-2 col-lg-3 navbarCollapse" >
