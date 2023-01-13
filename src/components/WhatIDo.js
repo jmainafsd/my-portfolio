@@ -15,7 +15,7 @@ export default function WhatIDo() {
             </Navbar>
             <div className="backLayer p-0 m-0"></div>
             <div className="frontLayer row">
-                <Col className="col-12 col-lg-10 col-xl-8 textSpan">
+                <Col className="col-12 col-lg-10 col-xl-8 col-xxl-6 textSpan">
 
                     <p className="whatIDo">
                         I Architect, Design and Develop Web and Mobile Applications using modern technologies, ingenuity and diligence to deliver phenomenal digital user experiences.
