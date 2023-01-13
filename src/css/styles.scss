@@ -81,7 +81,7 @@ body {
 //main navbar
 .navbar-main {
     background-color: slateblue;
-    background: transparent;
+    // background: transparent;
     // height: 65px;
     padding: 0 15px;
     overflow: hidden;
@@ -91,6 +91,7 @@ body {
         margin: 0 auto;
         padding: 15px;
         max-width: 1400px;
+        background-color: red;
     }
 
     .toggler {
@@ -101,7 +102,6 @@ body {
         border: none;
         border-right: 1px solid yellow;
         border-left: 1px solid yellow;
-        // z-index: 9;
     }
     .toggler:active {
         background-color: yellow;
@@ -614,45 +614,45 @@ body {
                     transform: rotateX(45deg) rotateZ(45deg);
                 }
 
-                .diamondOne, .diamondTwo {
+                .diamondOne {
                     margin: 0 auto;
-                    width: 180px;
-                    height: 180px;
+                    width: 100px;
+                    height: 100px;
+                    padding: 15px;
                 }
-                .diamondOne::before, .diamondOne::after,
-                .diamondTwo::before, .diamondTwo::after {
-                        background-color: #1e1e1e;
-                        border: 2px solid teal;
+                
+                
+                .diamondOne::before, .diamondOne::after {
+                    border: 2px solid teal;
                 }
+                .diamondOne::before {
+                    background-color: #1e1e1e;
+                }
+                .diamondOne::after {
+                        background-color: transparent
+                }
+                
+
                 .p1, .p2 {
                     padding: 0;
                     margin: 0;
                     font-size: 23px;
                     font-weight: bold;
-                    z-index: 9;
+                    z-index: 999;
                 }
                 .p1 {
                     transform: rotateX(45deg) rotateZ(-45deg);
                 }
-                .p2 {
-                    transform: rotateX(-45deg) rotateZ(45deg);
-                }
                 .diamondOne {
-                    animation: spinDiamondOne 10s ease-in-out infinite;
+                    animation: spinDiamondOne 6s ease-in-out infinite;
                 }
-                .diamondTwo {
-                    margin-top: -180px;
-                    animation: spinDiamondTwo 10s ease-in-out infinite;
-                }
-                @keyframes spinDiamondTwo{
-                    0% { transform: rotateX(90deg); }
-                    50% { transform: rotateX(-180deg); }
-                    100% { transform: rotateX(90deg); }
-                } 
+               
             
                 @keyframes spinDiamondOne{
                     0% { transform: rotateY(0deg); }
+                    25% { transform: rotateY(-90deg); }
                     50% { transform: rotateY(-180deg); }
+                    75% { transform: rotateY(-90deg); }
                     100% { transform: rotateY(0deg); }
                 } 
             }
