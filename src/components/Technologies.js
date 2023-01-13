@@ -23,8 +23,8 @@ export default function Technologies() {
                     
                 <Navbar sticky="top" className=" techNavbar">
                     <Container className="p-0">
-                        <div className='diamond diamondOne'><p className="p1">That I Use</p></div>
-                        <div className='diamond diamondTwo'><p className="p2">Technologies</p></div>
+                        <div className='diamond diamondOne'><p className="p1">My Tech</p></div>
+                        {/* <div className='diamond diamondTwo'><p className="p2">My Gear</p></div> */}
                     </Container>
                 </Navbar>
 
